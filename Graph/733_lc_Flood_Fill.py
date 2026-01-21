@@ -8,7 +8,7 @@ class Solution:
         rows, cols = len(image), len(image[0])
         original_color = image[sr][sc]
         if original_color == color:
-            return image 
+            return image
 
         def flood_fill_helper(r, c):
             if (

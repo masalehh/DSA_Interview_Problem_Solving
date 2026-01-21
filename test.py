@@ -1,18 +1,18 @@
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
 
-def count_ss(main_string, sub_string):
-    count = 0
-    for i in range(len(main_string) - len(sub_string) + 1):
-        if main_string[i: i + len(sub_string)] == sub_string:
-            count += 1
-    return count
+lst = [1, 3, 4, 5, 7]
 
+ls = [[2, 5, 8], [10, 58], [14, 28, 20, 78]]
+all_sum = sum(len(item) for item in ls)
 
-def minion_game(string):
-    consonent_string = "".join(set(string))
-    for char in string:
-        if char not in 'aeiou' and
+m = max(lst)
+mn = min(lst)
+lst.remove(m)
+lst.remove(mn)
+print(lst)
+print(3/2)
 
-# your code goes here
-
-
-if __name__ == '__main__':
