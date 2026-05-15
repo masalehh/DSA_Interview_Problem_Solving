@@ -27,4 +27,4 @@ class Solution:
                     res = [i, j]
 
         l, r = res
-        return s[l: r + 1] if resLen != float('infinity') else "" 
+        return s[l: r + 1] if resLen != float('infinity') else ""
