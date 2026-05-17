@@ -13,8 +13,8 @@ class Solution:
                     my character replacement limit then we take the window size
                     because I have to replace characters other than most frequent character
                     in the current window """
-                count[s[r]] -= 1
+                count[s[l]] -= 1
                 l += 1
             res = max(res, r - l + 1)
         return res
-    
+
