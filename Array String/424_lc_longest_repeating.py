@@ -16,4 +16,5 @@ class Solution:
                 count[s[r]] -= 1
                 l += 1
             res = max(res, r - l + 1)
-            
+        return res
+    
