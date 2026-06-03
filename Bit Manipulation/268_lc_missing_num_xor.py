@@ -1,0 +1,12 @@
+from typing import List
+
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n = len(nums)
+        xorr = n
+        for i in range(n):
+            xorr ^= i ^ nums[i]
+        return xorr
+
+# idea is: xor make output for both side same value
