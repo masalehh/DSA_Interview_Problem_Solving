@@ -1,11 +1,14 @@
 from typing import Optional
 
+
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
@@ -15,4 +18,4 @@ class Solution:
         right = self.maxDepth(root.right)
         return 1 + max(left, right)
 
-#solved by myself within 2 minutes 
+# solved by myself within 2 minutes
