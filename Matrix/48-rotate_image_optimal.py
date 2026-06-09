@@ -6,10 +6,22 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
+
         matrix.reverse()
+
+        """
+            This is exactly as do as matrix.reverse() 
+            
+            # Step 1: Flip the matrix horizontally (reverse rows)
+            # Swap the first half rows with the second half rows
+            for i in range(n // 2):
+                for j in range(n):
+                # Swap element at row i with element at row (n-i-1)
+                matrix[i][j], matrix[n - i - 1][j] = matrix[n - i - 1][j], matrix[i][j]
+        """
         for i in range(len(matrix)):
             for j in range(i+1, len(matrix)):
-                matrix[i][j], matrix[j][i] =  matrix[j][i], matrix[i][j]
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
 
 
 """
