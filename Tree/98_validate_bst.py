@@ -34,4 +34,21 @@ class Solution:
 """
 Time Complexity: O(n)
 Space Complexity: O(n)
+          5
+        /   \
+       3     8
+      / \   / \
+     1   4 7   9
+
+        5
+       / \
+      3   6
+     / \
+    1   4
+    
+        5
+       / \
+      3   4
+     / \ / \
+    1  4 3  6
 """
