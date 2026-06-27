@@ -13,3 +13,16 @@ class Solution:
                 left += 1
             else:
                 right -= 1
+
+
+# Ques: Why is it safe to move left when the sum is too small,
+# and move right when the sum is too large?
+#
+# Ans: Since the array is sorted, if the current sum is smaller than the target,
+# decreasing the right pointer would only make the sum smaller,
+# so we must increase the left pointer to potentially increase the sum.
+# Conversely, if the current sum is larger than the target,
+# increasing the left pointer would only make the sum larger,
+# so we decrease the right pointer to potentially reduce the sum.
+# This guarantees that we never discard a valid solution
+# and achieve an O(n) solution with O(1) extra space.
