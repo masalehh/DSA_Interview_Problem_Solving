@@ -13,3 +13,9 @@ class Solution:
                 left = right
             right += 1
         return max_profit
+
+#
+# Time & Space Complexity
+#
+#     Time complexity: O(n)O(n)
+#     Space complexity: O(1)O(1)
