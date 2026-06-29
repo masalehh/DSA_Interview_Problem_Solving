@@ -15,3 +15,11 @@ class Solution:
             res[i] *= postfix
             postfix *= nums[i]
         return res
+
+
+# Time & Space Complexity
+#
+#     Time complexity: O(n)O(n)
+#     Space complexity:
+#         O(1)O(1) extra space.
+#         O(n)O(n) space for the output array.
